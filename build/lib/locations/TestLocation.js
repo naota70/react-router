@@ -22,11 +22,11 @@ var TestLocation = (function () {
   }
 
   _createClass(TestLocation, [{
-    key: 'needsDOM',
-    get: function () {
-      return false;
-    }
-  }, {
+  //  key: 'needsDOM',
+  //  get: function () {
+  //    return false;
+  //  }
+  //}, {
     key: '_updateHistoryLength',
     value: function _updateHistoryLength() {
       History.length = this.history.length;
@@ -88,6 +88,7 @@ var TestLocation = (function () {
     }
   }]);
 
+    TestLocation.needsDOM = false;
   return TestLocation;
 })();
 
